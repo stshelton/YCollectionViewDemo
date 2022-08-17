@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410EB36B28AD68FD00A3BFBE /* YCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 410EB36A28AD68FD00A3BFBE /* YCollectionView */; };
 		41F89E3928A84B6A00A3B940 /* YCollectionViewDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F89E3828A84B6A00A3B940 /* YCollectionViewDemoApp.swift */; };
 		41F89E3B28A84B6A00A3B940 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F89E3A28A84B6A00A3B940 /* ContentView.swift */; };
 		41F89E3D28A84B6B00A3B940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F89E3C28A84B6B00A3B940 /* Assets.xcassets */; };
@@ -21,7 +22,7 @@
 		41F89E5A28A84BB500A3B940 /* CreateDemoCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F89E5028A84BB500A3B940 /* CreateDemoCellData.swift */; };
 		41F89E5B28A84BB500A3B940 /* CreateDemoSectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F89E5128A84BB500A3B940 /* CreateDemoSectionData.swift */; };
 		41F89E5C28A84BB500A3B940 /* DemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F89E5228A84BB500A3B940 /* DemoViewModel.swift */; };
-		41F89E8728A88FBB00A3B940 /* YCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 41F89E8628A88FBB00A3B940 /* YCollectionView */; };
+		41F89E8F28AAD56200A3B940 /* BasicYCollectionViewImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F89E8E28AAD56200A3B940 /* BasicYCollectionViewImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		41F89E5028A84BB500A3B940 /* CreateDemoCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDemoCellData.swift; sourceTree = "<group>"; };
 		41F89E5128A84BB500A3B940 /* CreateDemoSectionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDemoSectionData.swift; sourceTree = "<group>"; };
 		41F89E5228A84BB500A3B940 /* DemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewModel.swift; sourceTree = "<group>"; };
+		41F89E8E28AAD56200A3B940 /* BasicYCollectionViewImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicYCollectionViewImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F89E8728A88FBB00A3B940 /* YCollectionView in Frameworks */,
+				410EB36B28AD68FD00A3BFBE /* YCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,7 @@
 				41F89E3A28A84B6A00A3B940 /* ContentView.swift */,
 				41F89E3C28A84B6B00A3B940 /* Assets.xcassets */,
 				41F89E3E28A84B6B00A3B940 /* Preview Content */,
+				41F89E8E28AAD56200A3B940 /* BasicYCollectionViewImplementation.swift */,
 			);
 			path = YCollectionViewDemo;
 			sourceTree = "<group>";
@@ -148,7 +151,7 @@
 			);
 			name = YCollectionViewDemo;
 			packageProductDependencies = (
-				41F89E8628A88FBB00A3B940 /* YCollectionView */,
+				410EB36A28AD68FD00A3BFBE /* YCollectionView */,
 			);
 			productName = YCollectionViewDemo;
 			productReference = 41F89E3528A84B6900A3B940 /* YCollectionViewDemo.app */;
@@ -178,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 41F89E2C28A84B6900A3B940;
+			packageReferences = (
+				410EB36928AD68FD00A3BFBE /* XCRemoteSwiftPackageReference "YCollectionView" */,
+			);
 			productRefGroup = 41F89E3628A84B6900A3B940 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,6 +216,7 @@
 				41F89E5828A84BB500A3B940 /* OverrideLoadingCell.swift in Sources */,
 				41F89E3B28A84B6A00A3B940 /* ContentView.swift in Sources */,
 				41F89E5328A84BB500A3B940 /* LoadingCellView.swift in Sources */,
+				41F89E8F28AAD56200A3B940 /* BasicYCollectionViewImplementation.swift in Sources */,
 				41F89E5928A84BB500A3B940 /* ContentView.swift in Sources */,
 				41F89E5C28A84BB500A3B940 /* DemoViewModel.swift in Sources */,
 				41F89E5B28A84BB500A3B940 /* CreateDemoSectionData.swift in Sources */,
@@ -352,6 +359,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SShelton.test.YCollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -381,6 +389,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,7 +398,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SShelton.test.YCollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -417,9 +426,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		410EB36928AD68FD00A3BFBE /* XCRemoteSwiftPackageReference "YCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stshelton/YCollectionView";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		41F89E8628A88FBB00A3B940 /* YCollectionView */ = {
+		410EB36A28AD68FD00A3BFBE /* YCollectionView */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 410EB36928AD68FD00A3BFBE /* XCRemoteSwiftPackageReference "YCollectionView" */;
 			productName = YCollectionView;
 		};
 /* End XCSwiftPackageProductDependency section */

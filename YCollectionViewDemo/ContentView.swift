@@ -21,12 +21,11 @@ struct ContentView: View {
                 switch cellData {
                 case let demoCellData as DemoCellData:
                     BasicCellView(demoCellData: demoCellData)
-                case _ as LoadMoreCellsData, _ as OverrideLoadingCell, _ as OverrideSectionLoadingCell:
+                case _ as OverrideLoadingCell, _ as OverrideSectionLoadingCell:
                    LoadingCellView()
                 default:
                     EmptyView()
                 }
-                
             } supplementaryView: { kind, indexPath, sectionData in
                 if kind == UICollectionView.elementKindSectionHeader{
                     HeaderView()
